@@ -6,11 +6,11 @@ if (ENV === 'development') dotenv.config();
 const config = {
   ENV: process.env.NODE_ENV,
   PORT: process.env.PORT,
+  OPEN_CAGE_API_KEY: process.env.OPEN_CAGE_API_KEY,
 }
 
 module.exports = (key) => {
   if (!key) return config;
-  console.log('key: ', config[key]);
 
   return config[key]
 }

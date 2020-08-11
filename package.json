@@ -19,5 +19,8 @@
   "homepage": "https://github.com/BingWangEd/SlackApp-GiveMeABowl#readme",
   "devDependencies": {
     "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
   }
 }

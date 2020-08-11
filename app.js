@@ -1,6 +1,9 @@
 const http = require('http');
 const { httpsGetRequest } = require('./src/httpsMethods');
 const { parse } = require('querystring');
+const config = require('./config');
+
+const PORT = config('PORT');
 
 //create a server object:
 const server = http.createServer(async (req, res) => {
@@ -37,8 +40,6 @@ const collectRequestData = (request, callback) => {
     }
   });
 }
-
-const PORT = 3000;
 
 server.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
